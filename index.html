@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiraa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+ Anglais
+            padding: 8px;
+            margin-top: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Kiraa</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Ordered List with Roman Numerals -->
+        <section>
+            <h2>Key Features</h2>
+            <ol type="I">
+                <li>Web Design</li>
+                <li>User-Friendly Interface</li>
+                <li>Secure Registration</li>
+            </ol>
+        </section>
+
+        <!-- External Image from Pexels -->
+        <section>
+            <h2>Featured Image</h2>
+            <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="Team collaboration">
+        </section>
+
+        <!-- Contacts Table -->
+        <section>
+            <h2>Contact List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>123 Main St, City</td>
+                        <td>555-0123</td>
+                        <td>john.doe@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>456 Oak Ave, Town</td>
+                        <td>555-0456</td>
+                        <td>jane.smith@yahoo.com</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Clark</td>
+                        <td>789 Pine Rd, Village</td>
+                        <td>555-0789</td>
+                        <td>emily.clark@protonmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Brown</td>
+                        <td>321 Elm St, City</td>
+                        <td>555-1011</td>
+                        <td>michael.brown@protonmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Sarah Davis</td>
+                        <td>654 Birch Ln, Town</td>
+                        <td>555-1213</td>
+                        <td>sarah.davis@protonmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section>
+            <h2>Register Now</h2>
+            <form action="/submit" method="POST">
+                <!-- Name Field -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <!-- Email Field -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <!-- Password Field -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required>
+
+                <!-- Date of Birth Field -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <!-- Dropdown for Country -->
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="usa">United States</option>
+                    <option value="canada">South Africa</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <!-- Radio Buttons for Account Type -->
+                <fieldset>
+                    <legend>Account Type:</legend>
+                    <label>
+                        <input type="radio" name="account_type" value="personal" required> Personal
+                    </label>
+                    <label>
+                        <input type="radio" name="account_type" value="business"> Business
+                    </label>
+                </fieldset>
+
+                <!-- Checkboxes for Interests -->
+                <fieldset>
+                    <legend>Interests:</legend>
+                    <label>
+                        <input type="checkbox" name="interests" value="technology"> Technology
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="sports"> Sports
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="music"> Music
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="food"> Food
+                    </label>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Kiraa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
